@@ -58,18 +58,9 @@
 	time = 120
 	category = CAT_ARMOR
 
-/datum/table_recipe/Imetalarmor
-	name = "improved metal armor"
-	result = /obj/item/clothing/suit/armor/f13/ibmetalarmor
-	reqs = list(/obj/item/stack/sheet/gekkonhide = 1,
-				/obj/item/stack/cable_coil = 5,
-				/obj/item/stack/sheet/metal = 4,
-				/obj/item/stack/sheet/plasteel = 2)
-	tools = list(/obj/item/weapon/screwdriver, /obj/item/weapon/wirecutters)
-	time = 120
-	category = CAT_ARMOR
 
-/datum/table_recipe/IImetalarmor
+
+/datum/table_recipe/Imetalarmor
 	name = "upgrading metal armor"
 	result = /obj/item/clothing/suit/armor/f13/ibmetalarmor
 	reqs = list(/obj/item/clothing/suit/armor/f13/bmetalarmor = 1,
@@ -152,7 +143,7 @@
 	name = "Bola"
 	result = /obj/item/weapon/restraints/legcuffs/bola
 	reqs = list(/obj/item/weapon/restraints/handcuffs/cable = 1,
-				/obj/item/stack/sheet/metal = 4)
+				/obj/item/stack/sheet/metal = 2)
 	time = 30
 	category= CAT_WEAPON
 
@@ -282,12 +273,11 @@
 /datum/table_recipe/improvisedslug
 	name = "Improvised Shotgun Shell"
 	result = /obj/item/ammo_casing/shotgun/improvised
-	reqs = list(/obj/item/weapon/grenade/chem_grenade = 1,
-				/obj/item/stack/sheet/metal = 1,
+	reqs = list(/obj/item/stack/sheet/metal = 1,
 				/obj/item/stack/cable_coil = 1,
 				/datum/reagent/fuel = 5)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 5
+	time = 10
 	category = CAT_AMMO
 
 /datum/table_recipe/improvisedslugoverload
@@ -303,7 +293,8 @@
 	name = "10 mm bullet"
 	result = /obj/item/ammo_casing/c10mm
 	reqs = list(/obj/item/ammo_casing/c10mm = 1,
-				/datum/reagent/blackpowder = 5)
+				/datum/reagent/blackpowder = 5,
+				/obj/item/stack/sheet/metal = 1)
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 5
 	category = CAT_AMMO
@@ -318,12 +309,13 @@
 	category = CAT_AMMO
 
 /datum/table_recipe/buckshot
-	name = "buckshot shell"
-	result = /obj/item/ammo_casing/shotgun/buckshot
-	reqs = list(/obj/item/ammo_casing/shotgun/buckshot = 1,
-				/datum/reagent/blackpowder = 10)
+	name = "5 buckshot shells"
+	result = /obj/item/ammo_casing/shotgun/buckshot = 5
+	reqs = list(/obj/item/ammo_casing/shotgun/buckshot = 5,
+				/datum/reagent/blackpowder = 10,
+				/obj/item/stack/sheet/metal = 2)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 5
+	time = 10
 	category = CAT_AMMO
 
 /datum/table_recipe/a556
